@@ -1,0 +1,21 @@
+class Estudante:
+    def __init__(self, nome, ra):
+        self.nome = nome
+        self.ra = ra
+
+    def apresentar(self):
+        return f"Nome: {self.nome}, RA: {self.ra}"
+
+
+class EstudanteGuilherme(Estudante):
+    def __init__(self):
+        super().__init__("Guilherme", "G076745")
+
+    def apresentar(self):
+        return f"Eu sou o estudante {self.nome}, meu RA é {self.ra}."
+
+
+estudante_guilherme = EstudanteGuilherme()
+
+
+print(estudante_guilherme.apresentar())
